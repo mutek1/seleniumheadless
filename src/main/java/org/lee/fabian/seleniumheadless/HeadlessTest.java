@@ -34,11 +34,11 @@ public class HeadlessTest {
 		WebDriver webDriver = getWebDriver(whichBrowser);
 		
 		// run test
-		webDriver.get("http://www.google.com");
+		webDriver.get("http://bing.com");
 		// identify search textbox
 		WebElement element = webDriver.findElement(By.name("q"));
 		// do search
-		element.sendKeys("fabianlee.org blog");
+		element.sendKeys("intellipaat");
 		element.submit();
 		
 		// wait and then check the page title of the results page
